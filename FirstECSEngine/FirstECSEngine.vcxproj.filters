@@ -44,5 +44,8 @@
     <ClInclude Include="EntityManager.h">
       <Filter>ECS</Filter>
     </ClInclude>
+    <ClInclude Include="Velocity.h">
+      <Filter>ECS</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

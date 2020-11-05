@@ -20,6 +20,7 @@ public:
 	void EraseEntity(Entity* player);
 	Entity* CloneEntity(Entity* player);
 
-private:
 	std::vector<std::unique_ptr<Entity>> entities;
+private:
+	float deltaTime;
 };

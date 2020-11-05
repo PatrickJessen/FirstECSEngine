@@ -1,7 +1,7 @@
 #include <iostream>
-#include "ECS.h"
 #include "Transform.h"
 #include "Entity.h"
+#include <Windows.h>
 #include "EntityManager.h"
 
 int main()
@@ -12,12 +12,14 @@ int main()
 	manager->AddEntity(entity);
 
 	entity->getComponent<Transform>().position = Vector2DF(20000, 30000);
+	entity->getComponent<Transform>().position.ones().x = 10;
+
 
 	while (true)
 	{
+		std::cout << entity->getComponent<Transform>().position;
 		manager->Update();
 		manager->Draw();
 	}
-	std::cout << entity->getComponent<Transform>().position;
 
 }
