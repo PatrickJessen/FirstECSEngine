@@ -1,5 +1,5 @@
 #pragma once
-
+#include "Entity.h"
 #include <vector>
 #include <memory>
 
@@ -20,7 +20,7 @@ public:
 	void EraseEntity(Entity* player);
 	Entity* CloneEntity(Entity* player);
 
-	std::vector<std::unique_ptr<Entity>> entities;
 private:
+	std::vector<std::unique_ptr<Entity>> entities;
 	float deltaTime;
 };

@@ -1,9 +1,8 @@
 #include "EntityManager.h"
-#include "Entity.h"
 #include <chrono>
 
-static auto tp1 = std::chrono::system_clock::now();
-static auto tp2 = std::chrono::system_clock::now();
+//static auto tp1 = std::chrono::system_clock::now();
+//static auto tp2 = std::chrono::system_clock::now();
 
 void EntityManager::Draw()
 {
@@ -19,10 +18,10 @@ void EntityManager::Update()
 	for (auto& entity : entities)
 	{
 		entity->Update();
-		tp2 = std::chrono::system_clock::now();
+		/*tp2 = std::chrono::system_clock::now();
 		std::chrono::duration<float> elapsedTime = tp2 - tp1;
 		tp1 = tp2;
-		deltaTime = elapsedTime.count() * 100.0f;
+		deltaTime = elapsedTime.count() * 100.0f;*/
 	}
 }
 

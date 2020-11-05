@@ -16,6 +16,12 @@
     <Filter Include="ECS">
       <UniqueIdentifier>{ece74534-8679-4771-9b76-36ca2a27fcbc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="AssetManager">
+      <UniqueIdentifier>{2bb6a1ab-dfc5-425d-a8c5-703d59a20e7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{54fd2250-d850-4ac6-b8e8-4ef9648bafcd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -23,6 +29,12 @@
     </ClCompile>
     <ClCompile Include="EntityManager.cpp">
       <Filter>ECS</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="AssetManager.cpp">
+      <Filter>AssetManager</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -45,6 +57,15 @@
       <Filter>ECS</Filter>
     </ClInclude>
     <ClInclude Include="Velocity.h">
+      <Filter>ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="AssetManager.h">
+      <Filter>AssetManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.h">
       <Filter>ECS</Filter>
     </ClInclude>
   </ItemGroup>

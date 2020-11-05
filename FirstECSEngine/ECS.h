@@ -17,7 +17,7 @@ inline ComponentID getComponentID()
 template<typename T>
 inline ComponentID getComponentID() noexcept
 {
-	static_assert(std::is_base_of<Component, T>::value, "");
+	static_assert(std::is_base_of<Component, T>::value, "none");
 	static const ComponentID typeID = getComponentID();
 	return typeID;
 }
