@@ -12,7 +12,10 @@ public:
 	Entity* entity;
 
 	virtual bool init(){ return true; }
-	virtual void Draw(){}
+	virtual void Draw()
+	{
+
+	}
 	virtual void Update(){}
 };
 

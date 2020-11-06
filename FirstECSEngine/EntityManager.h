@@ -3,12 +3,9 @@
 #include <vector>
 #include <memory>
 
-class Entity;
-
 class EntityManager
 {
 public:
-
 	EntityManager() = default;
 	~EntityManager() = default;
 
@@ -22,5 +19,5 @@ public:
 
 private:
 	std::vector<std::unique_ptr<Entity>> entities;
-	float deltaTime;
+	//float deltaTime;
 };

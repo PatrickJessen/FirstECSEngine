@@ -48,6 +48,7 @@ private:
 	SDL_Window* window;
 	SDL_Color clearColor;
 	SDL_Renderer* renderer;
+
 	static Engine* isInstance;
 };
 

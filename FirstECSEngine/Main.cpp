@@ -3,7 +3,8 @@
 
 int main()
 {
-	auto engine = Engine::Get();
+	Engine& engine = Engine::Get();
+
 	engine.Init();
 	while (engine.IsRunning())
 	{

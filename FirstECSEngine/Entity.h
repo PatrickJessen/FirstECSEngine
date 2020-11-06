@@ -20,7 +20,7 @@ public:
 	inline T& addComponent(TArgs&&... args)
 	{
 		T* comp(new T(std::forward<TArgs>(args)...));
-		//comp->entity = this;
+		comp->entity = this;
 		std::unique_ptr<Component> uptr { comp };
 		components.emplace_back(std::move(uptr));
 

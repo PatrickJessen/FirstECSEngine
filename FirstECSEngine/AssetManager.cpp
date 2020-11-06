@@ -47,6 +47,10 @@ void AssetManager::LoadTexture(std::string id, std::string path)
 	if (textures.count(id) <= 0)
 	{
 		SDL_Texture* texture = IMG_LoadTexture(Engine::Get().GetRenderer(), path.c_str());
+
+
+		std::cout << SDL_GetError() << '\n';
+		
 		if (texture)
 		{
 			textures[id] = texture;
@@ -54,6 +58,7 @@ void AssetManager::LoadTexture(std::string id, std::string path)
 		}
 		else
 		{
+			std::cout << "test";
 			std::cerr << SDL_GetError() << std::endl;
 		}
 	}
